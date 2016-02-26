@@ -5,7 +5,6 @@ import org.apache.spark.SparkConf
 
 object SimpleApp {
   def main(args: Array[String]) {
-//    val logFile = "/Users/kelley/dev/spark/prebuilt/spark-1.6.0-bin-hadoop2.4/README.md" // Should be some file on your system
     val spk = sys.env.get("SPARK_HOME")
     val logFile = spk.get + "/README.md"
     val conf = new SparkConf().setAppName("Simple Application")
