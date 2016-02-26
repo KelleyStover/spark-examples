@@ -1,1 +1,2 @@
 # spark-examples
+# getting started
