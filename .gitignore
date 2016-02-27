@@ -1,6 +1,10 @@
-#intellij
-.idea*
-.iml
+# as per https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
+# intellij
+# share all the files under the .idea directory except
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/libraries
+# share the .iml
 
 # Mac file
 .DS_Store
@@ -9,10 +13,16 @@
 *.log
 
 # sbt specific
+.cache
+.history
+.lib/
 dist/*
-*/target/
+target/
 lib_managed/
 src_managed/
-*/project
 project/boot/
-project/plugins/project/ 
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
